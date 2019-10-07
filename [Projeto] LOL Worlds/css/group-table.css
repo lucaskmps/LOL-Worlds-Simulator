@@ -1,0 +1,202 @@
+/* Container */
+.table-container{
+    margin-top: 25px;
+
+    height: 540px;
+    width: 92%;
+    
+    border-radius: 5px;
+
+    flex-wrap: wrap;
+
+    transition: all 200ms ease;
+    position: relative;
+
+    display: none;
+    transform: translateY(-200%);
+    
+}
+/* Design do Título dos Grupos */
+.groups-title{
+    width: 100%;
+    height: auto;
+
+    font-family: 'Teko';
+
+}
+/* Nome,Pontos,wins e Jogos */
+.table-points-bar{
+    display: grid;
+    grid-template-columns: 8fr 2fr 2fr 2fr;
+
+    width: 85%;
+    margin-left: 33px;
+    margin-top: 8px;
+
+    color: black;
+    background: white;
+    text-align: center;
+}
+/* Nome do Grupo */
+.table-container h3{
+    color: black;
+    font-size: 13pt;
+    text-align: center;
+
+
+    background: #ceaf4b;
+    border-bottom: 1px solid grey;
+}
+
+/* Tabelas */
+.groups-tables{
+    background: rgba(0, 0, 0, 0.507);
+    border: 1px solid #a18c46;
+
+    height: 250px;
+    width: 445px;
+    margin: 10px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Team Bars */
+.team-bar{
+    width: 85%;
+    margin: 3px;
+    height: 40px;
+    background: rgba(0,0,0,.9);
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+}
+/**/
+.team-bar p{
+    color: white;
+    font-size: 10pt;
+
+    left: 60px;
+
+    position: absolute;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.team-bar .numbers-box{
+    font-family: 'Teko';
+}
+
+.team-bar img{
+    height: 25px;
+    width: auto;
+    margin-left: 10px;
+}
+
+.team-bar span{
+    color: white;
+    font-size: 15pt;
+    top: 8px;
+    position: absolute;
+}
+
+.points{
+    right: 129px;
+}
+.wins{
+    right: 75px;
+}
+.games{
+    right: 22px;
+}
+
+/*###################*/
+
+/* Play Buttons */
+.play-buttons-container{
+
+    position: absolute;
+    right: 0;
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'contrail one';
+}
+
+.play-buttons-container h1{
+    font-size: 50pt;
+    text-shadow: 3px 3px 1px black;
+    color: white;
+}
+
+.play-buttons-container h4{
+    font-size: 40pt;
+    text-shadow: 3px 3px 1px black;
+    color: white;
+}
+
+.play-buttons-container button{
+    transition: all 1s ease-in-out;
+
+    padding: 5px 50px;
+    margin: 10px;
+    border-radius: 3px;
+
+
+    border: 2px solid white;
+    background: #e43225;
+    box-shadow: 3px 3px 1px black;
+    color: white;
+
+    cursor: pointer;
+    font-family: 'kanit';
+    font-size: 15pt;
+
+}
+
+#play-1, #play-2, #play-3{
+    display: none;
+    transition: all 200ms ease;
+    opacity: 0;
+}
+
+/* Botão Quartas de Final */
+.quarter{
+    position: absolute;
+    right: 93px;
+    top: 49%;
+
+    width: 200px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 1px black;
+    border: 1px solid white;
+
+    display: none;
+    transition: all 400ms ease;
+    opacity: 0;
+
+    cursor: pointer;
+}
+.quarter p{
+    font-size: 15pt;
+    color: white;
+    font-family: 'contrail one';
+}
+
+.quarter img{
+    width: auto;
+    height: 20px;
+}

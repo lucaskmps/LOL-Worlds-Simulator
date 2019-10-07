@@ -1,0 +1,123 @@
+.burger{
+    color: white;
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    font-size: 22pt;
+    cursor: pointer;
+}
+/**/
+/* Sidebar */
+.ranking{
+    background: rgb(27, 26, 26);
+    width: 375px;
+    height: 100vh;
+    margin-top: 4vh;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+
+    transform: translateX(-100%);
+    transition: all 150ms linear;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.active{
+    transform: translateX(0);
+}
+
+/* Title Ranking */
+.ranking-title{
+    margin: 40px 0px 10px 0px;
+    font-family: 'kanit';
+    color: white;
+}
+/* Team Bar */
+.ranking-team-bar{
+    background: rgb(37, 36, 39);
+    border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+    
+    height: 50px;
+    width: 92%;
+    margin: 0px 0;
+    margin-left: -4px;
+
+    display: flex;
+    align-items: center;
+    font-family: 'kanit';
+    font-size: 11pt;
+
+    overflow: hidden;
+    position: relative;
+}
+
+/* Country-Flag */
+.country-flag-container{
+    height: 100%;
+    width: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.country-flag-container img{
+    height: 18px;
+    width: auto;
+    border-radius: 3px;
+}
+/* Team Position */
+.ranking-position{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(0, 0, 0, 0.541);
+    height: 100%;
+    width: 12%;
+    color: white;
+}
+
+#position-0{
+    background: rgb(230, 40, 40);
+}
+#position-1{
+    background: rgb(139, 28, 28);
+}
+#position-2{
+    background: rgb(83, 9, 9);
+}
+
+
+/* Team Logo */
+.ranking-team-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 15px;
+}
+.ranking-team-logo img{
+    width: 25px;
+    height: auto;
+}   
+/* Team Name */
+.ranking-team-name{
+    color: white;
+}
+
+/* Team Points */
+.ranking-team-points{
+    position: absolute;
+    right: 0px;
+    color: white;
+    border-left: 1px solid rgba(128, 128, 128, 0.199);
+    height: 100%;
+    width: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sort-groups.css">
+    <link rel="stylesheet" href="css/group-table.css">
+    <link rel="stylesheet" href="css/quarter.css">
+    <link rel="stylesheet" href="css/semi.css">
+    <link rel="stylesheet" href="css/finals.css">
+    <link rel="stylesheet" href="css/ranking.css">
+    <title>LOL Worlds</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <img id="lol-logo" src="./images/hud/lol-white-logo.png" alt="logo" onclick="test()">
+        <div onclick="toggleRanking()" class="burger">&#9776;</div>
+    </header>
+    <main>
+    <!-- ###### -->
+
+    <!-- Ranking -->
+    <aside class="ranking">
+        <div class="ranking-title">
+            <h1>Worlds Ranking</h1>
+        </div>
+
+        
+        <!-- 1 -->
+        <section class="ranking-team-bar">
+            <div id="position-0" class="ranking-position"></div>
+            <div id="rank-flag-0" class="country-flag-container">
+                <img src="./images/flags/ch.jpg" alt="">
+            </div>
+            <div id="ranking-logo-0" class="ranking-team-logo">
+                <img src="" alt="">
+            </div>
+
+            <div id="ranking-name-0" class="ranking-team-name"></div>
+            <div id="ranking-points-0" class="ranking-team-points"></div>
+        </section>
+
+        <!-- 2 -->
+        <section class="ranking-team-bar">
+            <div id="position-1" class="ranking-position"></div>
+            <div id="rank-flag-1" class="country-flag-container">
+                    <img src="./images/flags/kr.jpg" alt="">
+                </div>
+            <div id="ranking-logo-1" class="ranking-team-logo">
+                <img src="" alt="">
+            </div>
+
+            <div id="ranking-name-1" class="ranking-team-name"></div>
+            <div id="ranking-points-1" class="ranking-team-points"></div>
+        </section>
+
+        <!-- 3 -->
+        <section class="ranking-team-bar">
+            <div id="position-2" class="ranking-position"></div>
+        <div id="rank-flag-2" class="country-flag-container">
+                <img src="./images/flags/eu.jpg" alt="">
+            </div>  
+            <div id="ranking-logo-2" class="ranking-team-logo">
+                <img src="" alt="">
+            </div>
+
+            <div id="ranking-name-2" class="ranking-team-name"></div>
+            <div id="ranking-points-2" class="ranking-team-points"></div>
+        </section>
+
+        <!-- 4 -->
+        <section class="ranking-team-bar">
+            <div id="position-3" class="ranking-position"></div>
+            
+            <div id="ranking-logo-3" class="ranking-team-logo">
+                <img src="" alt="">
+            </div>
+
+            <div id="ranking-name-3" class="ranking-team-name"></div>
+            <div id="ranking-points-3" class="ranking-team-points"></div>
+        </section>
+
+        <!-- 5 -->
+        <section class="ranking-team-bar">
+            <div id="position-4" class="ranking-position"></div>
+            
+            <div id="ranking-logo-4" class="ranking-team-logo">
+                <img src="" alt="">
+            </div>
+
+            <div id="ranking-name-4" class="ranking-team-name"></div>
+            <div id="ranking-points-4" class="ranking-team-points"></div>
+        </section>
+
+        <!-- 6 -->
+        <section class="ranking-team-bar">
+            <div id="position-5" class="ranking-position"></div>
+            
+            <div id="ranking-logo-5" class="ranking-team-logo">
+                <img src="" alt="">
+            </div>
+
+            <div id="ranking-name-5" class="ranking-team-name"></div>
+            <div id="ranking-points-5" class="ranking-team-points"></div>
+        </section>
+
+        <!-- 7 -->
+        <section class="ranking-team-bar">
+            <div id="position-6" class="ranking-position"></div>
+            
+            <div id="ranking-logo-6" class="ranking-team-logo">
+                <img src="" alt="">
+            </div>
+
+            <div id="ranking-name-6" class="ranking-team-name"></div>
+            <div id="ranking-points-6" class="ranking-team-points"></div>
+        </section>
+
+        <!-- 8 -->
+        <section class="ranking-team-bar">
+            <div id="position-7" class="ranking-position"></div>
+            
+            <div id="ranking-logo-7" class="ranking-team-logo">
+                <img src="" alt="">
+            </div>
+
+            <div id="ranking-name-7" class="ranking-team-name"></div>
+            <div id="ranking-points-7" class="ranking-team-points"></div>
+        </section>
+
+        <!-- 9 -->
+        <section class="ranking-team-bar">
+            <div id="position-8" class="ranking-position"></div>
+            
+            <div id="ranking-logo-8" class="ranking-team-logo">
+                <img src="" alt="">
+            </div>
+
+            <div id="ranking-name-8" class="ranking-team-name"></div>
+            <div id="ranking-points-8" class="ranking-team-points"></div>
+        </section>
+
+        <!-- 10 -->
+        <section class="ranking-team-bar">
+            <div id="position-9" class="ranking-position"></div>
+            
+            <div id="ranking-logo-9" class="ranking-team-logo">
+                <img src="" alt="">
+            </div>
+
+            <div id="ranking-name-9" class="ranking-team-name"></div>
+            <div id="ranking-points-9" class="ranking-team-points"></div>
+        </section>
+
+    </aside>
+    <!-- ####### -->
+
+
+        <!-- Sort Groups Area -->
+        <section id="sort-container">
+                <img id="worlds-logo" src="./images/hud/worlds-logo.png" alt="">
+            <div class="groups-container" id="group-a">
+                <h1>Group A</h1>
+                <div class="teams-wrapper">
+                    <div class="team-container"><img id="a-team1" src="" alt=""></div>
+                    <div class="team-container"><img id="a-team2" src="" alt=""></div>
+                    <div class="team-container"><img id="a-team3" src="" alt=""></div>
+                    <div class="team-container"><img id="a-team4" src="" alt=""></div>
+                </div>
+            </div>
+            <div class="groups-container" id="group-b">
+                <h1>Group B</h1>
+                <div class="teams-wrapper">
+                    <div class="team-container"><img id="b-team1" src="" alt=""></div>
+                    <div class="team-container"><img id="b-team2" src="" alt=""></div>
+                    <div class="team-container"><img id="b-team3" src="" alt=""></div>
+                    <div class="team-container"><img id="b-team4" src="" alt=""></div>
+                </div>
+            </div>
+            <div class="groups-container" id="group-c">
+                <h1>Group C</h1>
+                <div class="teams-wrapper">
+                    <div class="team-container"><img id="c-team1" src="" alt=""></div>
+                    <div class="team-container"><img id="c-team2" src="" alt=""></div>
+                    <div class="team-container"><img id="c-team3" src="" alt=""></div>
+                    <div class="team-container"><img id="c-team4" src="" alt=""></div>
+                </div>
+            </div>
+            <div class="groups-container" id="group-d">
+                <h1>Group D</h1>
+                <div class="teams-wrapper">
+                    <div class="team-container"><img id="d-team1" src="" alt=""></div>
+                    <div class="team-container"><img id="d-team2" src="" alt=""></div>
+                    <div class="team-container"><img id="d-team3" src="" alt=""></div>
+                    <div class="team-container"><img id="d-team4" src="" alt=""></div>
+                </div>
+            </div>
+            <input id="sort-button" class="sort-area-buttons" type="button" value="Sort Team" onclick="sortTeams()">
+            <input id="start-button" class="sort-area-buttons" type="button"  value="Start Worlds!" onclick="startWorlds()">
+        </section>        
+        <!-- ################ -->
+
+        <!-- Group Phase Layout -->
+        <div class="table-container">
+
+            <div class="groups-tables">
+                <div class="groups-title">
+                    <h3>Group A</h3>
+                    <div class="table-points-bar">
+                        <p>Name</p>
+                        <p>Points</p>
+                        <p>Wins</p>
+                        <p>Games</p>
+                    </div>
+                </div>
+                <div class="team-bar" id="a-team-bar-1">
+                    <img class="team-logo-bar" id="a-logo-0" src="" alt="">
+                    <p id="a-team-name-0"></p>
+                    <div class="numbers-box">
+                        <span class="points" id="a-points-team-0"></span>
+                        <span class="wins" id="a-wins-team-0"></span>
+                        <span class="games" id="a-games-team-0"></span>
+                    </div>
+                </div>
+
+                <div class="team-bar" id="a-team-bar-1">
+                    <img class="team-logo-bar" id="a-logo-1" src="" alt="">
+                    <p id="a-team-name-1"></p>
+                    <div class="numbers-box">
+                        <span class="points" id="a-points-team-1"></span>
+                        <span class="wins" id="a-wins-team-1"></span>
+                        <span class="games" id="a-games-team-1"></span>
+                    </div>
+                </div>
+
+                <div class="team-bar" id="a-team-bar-2">
+                    <img class="team-logo-bar" id="a-logo-2" src="" alt="">
+                    <p id="a-team-name-2"></p>
+                    <div class="numbers-box">
+                        <span class="points" id="a-points-team-2"></span>
+                        <span class="wins" id="a-wins-team-2"></span>
+                        <span class="games" id="a-games-team-2"></span>
+                    </div>
+                </div>
+
+                <div class="team-bar" id="a-team-bar-3">
+                    <img class="team-logo-bar" id="a-logo-3" src="" alt="">
+                    <p id="a-team-name-3"></p>
+                    <div class="numbers-box">
+                        <span class="points" id="a-points-team-3"></span>
+                        <span class="wins" id="a-wins-team-3"></span>
+                        <span class="games" id="a-games-team-3"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="groups-tables">
+                <div class="groups-title">
+                    <h3>Group B</h3>
+                    <div class="table-points-bar">
+                        <p>Name</p>
+                        <p>Points</p>
+                        <p>Wins</p>
+                        <p>Games</p>
+                    </div>
+                </div>
+                <div class="team-bar" id="b-team-bar-1">
+                        <img class="team-logo-bar" id="b-logo-0" src="" alt="">
+                        <p id="b-team-name-0"></p>
+                        <div class="numbers-box">
+                            <span class="points" id="b-points-team-0"></span>
+                            <span class="wins" id="b-wins-team-0"></span>
+                            <span class="games" id="b-games-team-0"></span>
+                        </div>
+                    </div>
+    
+                    <div class="team-bar" id="b-team-bar-1">
+                        <img class="team-logo-bar" id="b-logo-1" src="" alt="">
+                        <p id="b-team-name-1"></p>
+                        <div class="numbers-box">
+                            <span class="points" id="b-points-team-1"></span>
+                            <span class="wins" id="b-wins-team-1"></span>
+                            <span class="games" id="b-games-team-1"></span>
+                        </div>
+                    </div>
+    
+                    <div class="team-bar" id="b-team-bar-2">
+                        <img class="team-logo-bar" id="b-logo-2" src="" alt="">
+                        <p id="b-team-name-2"></p>
+                        <div class="numbers-box">
+                            <span class="points" id="b-points-team-2"></span>
+                            <span class="wins" id="b-wins-team-2"></span>
+                            <span class="games" id="b-games-team-2"></span>
+                        </div>
+                    </div>
+    
+                    <div class="team-bar" id="b-team-bar-3">
+                        <img class="team-logo-bar" id="b-logo-3" src="" alt="">
+                        <p id="b-team-name-3"></p>
+                        <div class="numbers-box">
+                            <span class="points" id="b-points-team-3"></span>
+                            <span class="wins" id="b-wins-team-3"></span>
+                            <span class="games" id="b-games-team-3"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="groups-tables">
+                        <div class="groups-title">
+                            <h3>Group C</h3>
+                            <div class="table-points-bar">
+                                <p>Name</p>
+                                <p>Points</p>
+                                <p>Wins</p>
+                                <p>Games</p>
+                            </div>
+                        </div>
+                        <div class="team-bar" id="c-team-bar-1">
+                            <img class="team-logo-bar" id="c-logo-0" src="" alt="">
+                            <p id="c-team-name-0"></p>
+                            <div class="numbers-box">
+                                <span class="points" id="c-points-team-0"></span>
+                                <span class="wins" id="c-wins-team-0"></span>
+                                <span class="games" id="c-games-team-0"></span>
+                            </div>
+                        </div>
+        
+                        <div class="team-bar" id="c-team-bar-1">
+                            <img class="team-logo-bar" id="c-logo-1" src="" alt="">
+                            <p id="c-team-name-1"></p>
+                            <div class="numbers-box">
+                                <span class="points" id="c-points-team-1"></span>
+                                <span class="wins" id="c-wins-team-1"></span>
+                                <span class="games" id="c-games-team-1"></span>
+                            </div>
+                        </div>
+        
+                        <div class="team-bar" id="c-team-bar-2">
+                            <img class="team-logo-bar" id="c-logo-2" src="" alt="">
+                            <p id="c-team-name-2"></p>
+                            <div class="numbers-box">
+                                <span class="points" id="c-points-team-2"></span>
+                                <span class="wins" id="c-wins-team-2"></span>
+                                <span class="games" id="c-games-team-2"></span>
+                            </div>
+                        </div>
+        
+                        <div class="team-bar" id="c-team-bar-3">
+                            <img class="team-logo-bar" id="c-logo-3" src="" alt="">
+                            <p id="c-team-name-3"></p>
+                            <div class="numbers-box">
+                                <span class="points" id="c-points-team-3"></span>
+                                <span class="wins" id="c-wins-team-3"></span>
+                                <span class="games" id="c-games-team-3"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="groups-tables">
+                            <div class="groups-title">
+                                <h3>Group D</h3>
+                                <div class="table-points-bar">
+                                    <p>Name</p>
+                                    <p>Points</p>
+                                    <p>Wins</p>
+                                    <p>Games</p>
+                                </div>
+                            </div>
+                            <div class="team-bar" id="d-team-bar-1">
+                                <img class="team-logo-bar" id="d-logo-0" src="" alt="">
+                                <p id="d-team-name-0"></p>
+                                <div class="numbers-box">
+                                    <span class="points" id="d-points-team-0"></span>
+                                    <span class="wins" id="d-wins-team-0"></span>
+                                    <span class="games" id="d-games-team-0"></span>
+                                </div>
+                            </div>
+            
+                            <div class="team-bar" id="d-team-bar-1">
+                                <img class="team-logo-bar" id="d-logo-1" src="" alt="">
+                                <p id="d-team-name-1"></p>
+                                <div class="numbers-box">
+                                    <span class="points" id="d-points-team-1"></span>
+                                    <span class="wins" id="d-wins-team-1"></span>
+                                    <span class="games" id="d-games-team-1"></span>
+                                </div>
+                            </div>
+            
+                            <div class="team-bar" id="d-team-bar-2">
+                                <img class="team-logo-bar" id="d-logo-2" src="" alt="">
+                                <p id="d-team-name-2"></p>
+                                <div class="numbers-box">
+                                    <span class="points" id="d-points-team-2"></span>
+                                    <span class="wins" id="d-wins-team-2"></span>
+                                    <span class="games" id="d-games-team-2"></span>
+                                </div>
+                            </div>
+            
+                            <div class="team-bar" id="d-team-bar-3">
+                                <img class="team-logo-bar" id="d-logo-3" src="" alt="">
+                                <p id="d-team-name-3"></p>
+                                <div class="numbers-box">
+                                    <span class="points" id="d-points-team-3"></span>
+                                    <span class="wins" id="d-wins-team-3"></span>
+                                    <span class="games" id="d-games-team-3"></span>
+                                </div>
+                            </div>
+                        </div>
+                    
+                <div class="play-buttons-container">
+                    <h1>Day</h1>
+                    <h4>0</h4>
+                    <button id="play-1" onclick="schedule1()">Play</button>
+                    <button id="play-2" onclick="schedule2()">Play</button>
+                    <button id="play-3" onclick="schedule3()">Play</button>                   
+                </div>
+                
+            </div>
+
+            <div class="quarter" onclick="quarter()">
+                    <p>Quarter-Finals</p>
+                        <img src="./images/hud/arrow-right.svg" alt="">
+                    </div>
+         <!-- ################## -->        
+
+        <!-- Quarter-Finals -->
+        <section class="quarter-container">
+            <p class="finals-title">Quarter-Finals</p>
+            <button id="play-quarters" onclick="scheduleQuarters()">Play</button>
+            <button id="set-semi" onclick="setSemiFinal()">Semi Finals &#8250;</button>
+            
+            <aside class="quarter-doubles">
+                <div class="quarter-team-bar">
+                    <img id="quarter-logo-0" src="./images/teams/rng.png" alt="">
+                    <p id="quarter-name-0">Hong-Kong Attitude</p>
+                    <span id="quarter-games-0">0</span>
+                </div>
+                <div class="quarter-team-bar">
+                    <img id="quarter-logo-1" src="./images/teams/schalke.png" alt="">
+                    <p id="quarter-name-1">SKT T1</p>
+                    <span id="quarter-games-1">0</span>
+                </div>
+            </aside>
+
+            
+            <aside class="quarter-doubles">
+                <div class="quarter-team-bar">
+                    <img id="quarter-logo-2" src="./images/teams/rng.png" alt="">
+                    <p id="quarter-name-2">Hong-Kong Attitude</p>
+                    <span id="quarter-games-2">0</span>
+                </div>
+                <div class="quarter-team-bar">
+                    <img id="quarter-logo-3" src="./images/teams/schalke.png" alt="">
+                    <p id="quarter-name-3">SKT T1</p>
+                    <span id="quarter-games-3">0</span>
+                </div>
+            </aside>
+
+            
+            <aside class="quarter-doubles">
+                <div class="quarter-team-bar">
+                    <img id="quarter-logo-4" src="./images/teams/rng.png" alt="">
+                    <p id="quarter-name-4">Hong-Kong Attitude</p>
+                    <span id="quarter-games-4">0</span>
+                </div>
+                <div class="quarter-team-bar">
+                    <img id="quarter-logo-5" src="./images/teams/schalke.png" alt="">
+                    <p id="quarter-name-5">SKT T1</p>
+                    <span id="quarter-games-5">0</span>
+                </div>
+            </aside>
+
+            
+            <aside class="quarter-doubles">
+                <div class="quarter-team-bar">
+                    <img id="quarter-logo-6" src="./images/teams/rng.png" alt="">
+                    <p id="quarter-name-6">Hong-Kong Attitude</p>
+                    <span id="quarter-games-6">0</span>
+                </div>
+                <div class="quarter-team-bar">
+                    <img id="quarter-logo-7" src="./images/teams/schalke.png" alt="">
+                    <p id="quarter-name-7">SKT T1</p>
+                    <span id="quarter-games-7">0</span>
+                </div>
+            </aside>
+        </section>
+        <!-- ############## -->
+
+        <!-- Semi-Finals -->
+        <section class="semi-container">
+            <p class="finals-title">Semi-Finals</p>
+            <button id="play-semi" onclick="scheduleSemi()">Play</button>
+            <button id="go-to-finals" onclick="setFinals()">Finals &#8250;</button>
+
+            
+            <aside class="semi-doubles">
+                <div class="semi-team-bar">
+                    <img id="semi-logo-0" src="./images/teams/rng.png" alt="">
+                    <p id="semi-name-0">Hong-Kong Attitude</p>
+                    <span id="semi-games-0">1</span>
+                </div>
+                <div class="semi-team-bar">
+                    <img id="semi-logo-1" src="./images/teams/schalke.png" alt="">
+                    <p id="semi-name-1">SKT T1</p>
+                    <span id="semi-games-1">1</span>
+                </div>
+            </aside>
+
+            
+            <aside class="semi-doubles">
+                <div class="semi-team-bar">
+                    <img id="semi-logo-2" src="./images/teams/rng.png" alt="">
+                    <p id="semi-name-2">Hong-Kong Attitude</p>
+                    <span id="semi-games-2">1</span>
+                </div>
+                <div class="semi-team-bar">
+                    <img id="semi-logo-3" src="./images/teams/schalke.png" alt="">
+                    <p id="semi-name-3">SKT T1</p>
+                    <span id="semi-games-3">1</span>
+                </div>
+            </aside>
+        </section>
+         <!-- ############## -->
+
+         <!-- Finals -->
+         <section class="finals-container">
+            <p class="finals-title">Worlds Final</p>
+            <button id="play-final" onclick="scheduleFinal()">Play</button>
+            
+            <!-- FINAL -->
+            <aside class="final-doubles">
+                <div class="final-team-bar">
+                    <div class="country-flag-container">
+                    <img id="final-flag-0" src="./images/flags/us.jpg" class="country-flag" alt="">
+                    </div>
+                    <img id="final-logo-0" class="finals-team-logo" src="./images/teams/rng.png" alt="">
+                    <p id="final-name-0">Hong-Kong Attitude</p>
+                    <span id="final-games-0">1</span>
+                </div>
+                <div class="final-team-bar">
+                        <div class="country-flag-container">
+                                <img id="final-flag-1"  src="./images/flags/ch.jpg" class="country-flag" alt="">
+                                </div>
+                    <img id="final-logo-1" class="finals-team-logo" src="./images/teams/schalke.png" alt="">
+                    <p id="final-name-1">SKT T1</p>
+                    <span id="final-games-1">1</span>
+                </div>
+            </aside>
+
+            <!-- Third Place -->
+            <p class="finals-title">Third Place</p>
+            <button id="play-third" onclick="scheduleThird()">Play</button>
+
+            <aside class="final-doubles">
+                <div class="third-team-bar">
+                        <div class="country-flag-container">
+                                <img id="third-flag-0"  src="./images/flags/eu.jpg" class="country-flag" alt="">
+                            </div>
+                    <img id="third-logo-0" class="finals-team-logo" src="./images/teams/rng.png" alt="">
+                    <p id="third-name-0">Hong-Kong Attitude</p>
+                    <span id="third-games-0">1</span>
+                </div>
+                <div class="third-team-bar">
+                        <div class="country-flag-container">
+                            <img id="third-flag-1"  src="./images/flags/kr.jpg" class="country-flag" alt="">
+                        </div>
+                    <img id="third-logo-1" class="finals-team-logo" src="./images/teams/schalke.png" alt="">
+                    <p id="third-name-1">SKT T1</p>
+                    <span id="third-games-1">1</span>
+                </div>
+            </aside>
+        </section>
+         <!-- ###### -->
+
+
+    </main>
+    <script src="js/0. Database.js"></script>
+    <script src="js/0. Ranking.js"></script>
+    <script src="js/0. Animations.js"></script>
+    <script src="js/0. Play.js"></script>
+    <script src="js/1. Groups-Stage.js"></script>
+    <script src="js/1. Schedule-Groups.js"></script>
+    <script src="js/2. Quarter-Finals.js"></script>
+    <script src="js/3. Semi-Final.js"></script>
+    <script src="js/4. Finals.js"></script>
+</body>
+
+</html>
